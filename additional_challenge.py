@@ -51,6 +51,8 @@ def check_rating(book):
     elif rating > 4.5:
         return "high"
 
+print(check_rating(books[2]))
+
 
 # 2. Average Rating by Genre
 def average_rating_by_genre(books, genre):
@@ -64,6 +66,8 @@ def average_rating_by_genre(books, genre):
         return "No such genre in books"
     return total_rating / count
 
+print(average_rating_by_genre(books, "Fiction"))
+
 
 # 3. Books by Author
 def books_by_author(books, author):
@@ -74,3 +78,5 @@ def books_by_author(books, author):
     if len(written_by_author) == 0:
         return "The author is not in the list"
     return written_by_author
+
+print(books_by_author(books, "Harper Lee"))
