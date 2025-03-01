@@ -6,6 +6,8 @@ def count_vowels(word):
             count += 1
     return count
 
+print(count_vowels("take-home assignment"))
+
 
 # 2. Iterate through the following list of animals and print each one in all caps.
 animals = ['tiger', 'elephant', 'monkey', 'zebra', 'panther']
@@ -25,3 +27,7 @@ for i in range(1, 21):
 # 4. Write a function sum_of_integers(a, b) that takes two integers as input from the user and returns their sum.
 def sum_of_integers(a, b):
     return a+b
+
+num1 = int(input("Enter value of a: "))
+num2 = int(input("Enter value of b: "))
+print(sum_of_integers(num1, num2))
